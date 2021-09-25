@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getFirstName(){
+            var fname = document.getElementById('fname').value
+            var email = document.getElementById('email').value
+            var exp = document.getElementById('exp').value
+            var dob = document.getElementById("birthday");
+                   
+            
+            alert(`Hello ${fname}. your E-mail id  ${email}. your total experience is ${exp}. DOB: ${dob.value}`);
+        }
+    </script>
+</head>
+<body>  
+    <form>
+        <H1>Trainer Details</H1>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value="silambarasan"><br>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="exp">Experience:</label>
+        <input type="number" id="exp" name="exp" min="1" max="20">
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+
+        <label for="bdaymonth">Birthday:</label>
+        <input type="month" id="bdaymonth" name="bdaymonth">
+
+
+        <input type="submit" value="Submit" onclick="getFirstName()">
+      </form> 
+</body>
+</html>
